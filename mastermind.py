@@ -26,8 +26,8 @@ def play_game():
           "Note that colors can be used multiple times, and as such, all 4 colors are not always used.\n"
           "Example guess:\n"
           "yellow, green, red, blue\n")
-    game_sequence = generate_rand_order(COLORS)
     turn = 0
+    game_sequence = generate_rand_order(COLORS)
     player_guess = input_parser(input("Try to guess the sequence: "))
     while True:
         if player_guess == game_sequence:
