@@ -51,13 +51,13 @@ def play_game():
                     correct_colors += 1
                     temp_sequence.remove(player_guess[i])
 
-            # check if guess had both correct places and correct colors
+            # case if guess had both correct places and correct colors
             if len(correct_places) > 0 and (correct_colors != 0):
                 print("You're still not there, but %d of the colors were correct,"
                       "and you even had %d in the right place!" % (correct_colors, len(correct_places)))
                 player_guess = input_parser(input("What's your next guess? "))
 
-            # check if guess had no correct places, but some correct colors
+            # case if guess had no correct places, but some correct colors
             elif len(correct_places) == 0 and (correct_colors != 0):
                 print("You're still not there, but %s of the colors were correct!" % correct_colors)
                 player_guess = input_parser(input("What's your next guess? "))
