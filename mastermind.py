@@ -42,6 +42,7 @@ def play_game():
 
             if turn == 10:
                 print("You did not guess the sequence within the 10 turn limit, you lose.")
+                print("The correct sequence was; ", game_sequence)
                 return
 
             for i in range(0, len(player_guess)):
